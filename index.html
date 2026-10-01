@@ -1,132 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="এ প্লাস ম্যাচিং সেন্টার — আধুনিক ডিজাইন, উন্নতমানের কাপড় ও সাশ্রয়ী মূল্যে থ্রি-পিস কালেকশন।">
-<title>এ প্লাস ম্যাচিং সেন্টার | থ্রি-পিসের সেরা ঠিকানা</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>এ প্লাস ম্যাচিং সেন্টার | অনলাইন শপ</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Noto Sans Bengali',sans-serif;background:#fffaf5;color:#2d1b1b;line-height:1.7}
-:root{--maroon:#74152d;--deep:#4d0d1e;--gold:#c79a3b;--cream:#fff7ec;--pink:#f7e2dc}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(255,250,245,.96);backdrop-filter:blur(10px);border-bottom:1px solid #ead9c7}
-.navin{height:76px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--maroon);font-size:1.25rem}
-.brand img{width:52px;height:52px;object-fit:cover;border-radius:50%}
-.links{display:flex;gap:24px;font-weight:600}
-.links a:hover{color:var(--gold)}
-.menu{display:none;font-size:1.7rem}
-.hero{padding:34px 0 24px}
-.hero img{width:100%;display:block;border-radius:24px;box-shadow:0 18px 45px rgba(77,13,30,.14)}
-.section{padding:70px 0}
-.heading{text-align:center;margin-bottom:38px}
-.heading h2{font-size:2rem;color:var(--maroon)}
-.heading p{color:#765f5f;margin-top:6px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
-.about img{width:100%;max-width:430px;margin:auto;display:block;border-radius:22px}
-.card{background:#fff;border:1px solid #eddccc;border-radius:20px;padding:30px;box-shadow:0 12px 30px rgba(80,30,20,.07)}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.feature{text-align:center;background:var(--cream);padding:25px 15px;border-radius:18px;border:1px solid #eddccc}
-.feature .icon{font-size:2rem;margin-bottom:7px}
-.feature h3{color:var(--maroon);font-size:1.05rem}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.product{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #ead8c8;box-shadow:0 10px 25px rgba(80,30,20,.06)}
-.product .pic{height:230px;background:linear-gradient(135deg,#f8e9df,#efe0d1);display:flex;align-items:center;justify-content:center;font-size:3rem}
-.product .body{padding:20px}
-.product h3{color:var(--maroon)}
-.btn{display:inline-block;background:var(--maroon);color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;margin-top:14px}
-.btn:hover{background:var(--deep)}
-.cta{background:linear-gradient(135deg,var(--deep),var(--maroon));color:#fff;border-radius:28px;padding:50px;text-align:center}
-.cta h2{font-size:2rem}.cta p{margin:10px 0 12px;color:#f8e8dd}
-.cta .btn{background:var(--gold);color:#2f1b12;margin:5px}
-footer{margin-top:70px;background:#350815;color:#f7e9df;padding:38px 0;text-align:center}
-footer strong{color:#e7bd66}
-.small{font-size:.9rem;color:#cbb5ad;margin-top:8px}
-@media(max-width:800px){
- .links{display:none}.menu{display:block}
- .about{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr}
- .navin{height:68px}.brand{font-size:1rem}.brand img{width:45px;height:45px}
- .hero{padding-top:18px}.section{padding:48px 0}.heading h2{font-size:1.65rem}
- .cta{padding:34px 20px}.cta h2{font-size:1.5rem}
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700;800&display=swap');
+:root{--m:#74152d;--d:#4d0d1e;--g:#c79a3b;--bg:#fffaf6;--line:#ead8c7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#302020;font-family:'Noto Sans Bengali',sans-serif}
+a{text-decoration:none;color:inherit}.wrap{width:92%;max-width:1160px;margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#fffaf6ee;border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:var(--m);font-weight:800}.brand img{width:48px;height:48px;border-radius:50%}
+.links{display:flex;gap:22px;font-weight:600}.cart{border:0;background:var(--m);color:#fff;border-radius:999px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer}
+.hero{padding:22px 0}.hero img{width:100%;border-radius:20px}.sec{padding:55px 0}.title{text-align:center;margin-bottom:28px}.title h2{color:var(--m)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.photo{width:100%;height:290px;object-fit:cover;background:#f0ded4}.body{padding:18px}.body h3{margin:0;color:var(--m)}.price{font-size:1.2rem;font-weight:800;color:var(--m)}.sample{font-size:.75rem;background:#f7e7d0;padding:2px 8px;border-radius:20px}
+.add,.order{width:100%;border:0;border-radius:9px;padding:11px;margin-top:10px;font:inherit;font-weight:700;cursor:pointer}.add{background:var(--m);color:#fff}.order{background:#159447;color:#fff}
+.card,.contact{border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff}.contact{background:linear-gradient(135deg,var(--d),var(--m));color:#fff;text-align:center}.contact a{display:inline-block;background:var(--g);color:#24140d;padding:10px 18px;border-radius:999px;margin:5px;font-weight:800}
+footer{background:#350815;color:#fff;text-align:center;padding:30px;margin-top:50px}
+.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:20}.overlay.open{display:block}.drawer{position:absolute;right:0;top:0;width:min(520px,95%);height:100%;overflow:auto;background:#fffaf6;padding:22px}.head{display:flex;justify-content:space-between}.item{display:grid;grid-template-columns:65px 1fr auto;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.item img{width:65px;height:65px;object-fit:cover;border-radius:8px}.qty button{width:28px}.summary{background:#fff2e4;padding:15px;border-radius:10px;margin-top:15px}.row{display:flex;justify-content:space-between;margin:7px 0}.grand{border-top:1px solid var(--line);padding-top:8px;font-weight:800;color:var(--m)}label{display:block;font-weight:700;margin-top:10px}input,textarea,select{width:100%;padding:10px;border:1px solid #dcc8b7;border-radius:8px;font:inherit;margin-top:5px}textarea{min-height:80px}
+@media(max-width:850px){.links{display:none}.products{grid-template-columns:1fr 1fr}}@media(max-width:540px){.products{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<nav><div class="wrap nav">
+<a class="brand" href="#"><img src="logo.png" alt="">এ প্লাস ম্যাচিং সেন্টার</a>
+<div class="links"><a href="#collection">কালেকশন</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></div>
+<button class="cart" onclick="openCart()">🛒 কার্ট (<span id="count">0</span>)</button>
+</div></nav>
 
-<nav>
-  <div class="container navin">
-    <a class="brand" href="#home"><img src="logo.png" alt="এ প্লাস ম্যাচিং সেন্টার লোগো"><span>এ প্লাস ম্যাচিং সেন্টার</span></a>
-    <div class="links">
-      <a href="#home">হোম</a><a href="#about">আমাদের সম্পর্কে</a><a href="#collection">কালেকশন</a><a href="#contact">যোগাযোগ</a>
-    </div>
-    <div class="menu">☰</div>
-  </div>
-</nav>
+<main>
+<section class="wrap hero"><img src="banner.png" alt="এ প্লাস ম্যাচিং সেন্টার"></section>
+<section id="collection" class="sec"><div class="wrap">
+<div class="title"><h2>🌸 আমাদের থ্রি-পিস কালেকশন</h2><p>পণ্য বেছে নিয়ে কার্টে যোগ করুন এবং WhatsApp-এ অর্ডার করুন</p></div>
+<div class="products" id="products"></div>
+</div></section>
 
-<main id="home">
-<section class="hero container">
-  <img src="banner.png" alt="এ প্লাস ম্যাচিং সেন্টার — থ্রি-পিস কালেকশন">
-</section>
+<section id="about" class="sec"><div class="wrap card">
+<h2 style="color:var(--m)">💖 আমাদের সম্পর্কে</h2>
+<p><b>এ প্লাস ম্যাচিং সেন্টার</b> — আধুনিক ডিজাইন, উন্নতমানের কাপড় ও সাশ্রয়ী মূল্যে থ্রি-পিসের বিশ্বস্ত ঠিকানা।</p>
+<p>📍 ১/৩০, ইস্টার্ন মল্লিকা (২য় তলা), এলিফ্যান্ট রোড, ঢাকা-১২০৫<br>📞 ০১৩৫৫-২৪৩২৪২</p>
+</div></section>
 
-<section id="about" class="section">
- <div class="container about">
-  <div class="card">
-   <h2 style="color:var(--maroon);margin-bottom:12px">🌸 আমাদের সম্পর্কে</h2>
-   <p><strong>এ প্লাস ম্যাচিং সেন্টার</strong> হলো রুচিশীল ও আধুনিক থ্রি-পিস প্রেমীদের জন্য একটি বিশ্বস্ত ঠিকানা।</p>
-   <p style="margin-top:12px">আমাদের লক্ষ্য হলো সুন্দর ডিজাইন, উন্নতমানের কাপড় এবং সাশ্রয়ী মূল্যে আপনার পছন্দের কালেকশন পৌঁছে দেওয়া। নতুন নতুন ডিজাইন ও আকর্ষণীয় কালার কম্বিনেশনের জন্য আমাদের সাথে থাকুন।</p>
-  </div>
-  <img src="logo.png" alt="এ প্লাস ম্যাচিং সেন্টার">
- </div>
-</section>
-
-<section class="section" style="background:#fff">
- <div class="container">
-  <div class="heading"><h2>কেন আমাদের বেছে নেবেন?</h2><p>আপনার সন্তুষ্টিই আমাদের সবচেয়ে বড় অগ্রাধিকার</p></div>
-  <div class="features">
-   <div class="feature"><div class="icon">👗</div><h3>আধুনিক ডিজাইন</h3><p>ট্রেন্ডি ও রুচিশীল কালেকশন</p></div>
-   <div class="feature"><div class="icon">🌿</div><h3>উন্নতমানের কাপড়</h3><p>মানসম্মত কাপড়ের প্রতি গুরুত্ব</p></div>
-   <div class="feature"><div class="icon">💰</div><h3>সাশ্রয়ী মূল্য</h3><p>আপনার বাজেটের কথা মাথায় রেখে</p></div>
-   <div class="feature"><div class="icon">💖</div><h3>বিশ্বস্ত সেবা</h3><p>ক্রেতার সন্তুষ্টিকে অগ্রাধিকার</p></div>
-  </div>
- </div>
-</section>
-
-<section id="collection" class="section">
- <div class="container">
-  <div class="heading"><h2>আমাদের কালেকশন</h2><p>আপনার পছন্দের ডিজাইন খুঁজে নিন</p></div>
-  <div class="products">
-   <div class="product"><div class="pic">🌸</div><div class="body"><h3>পাকিস্তানি থ্রি-পিস</h3><p>নতুন ডিজাইন ও আকর্ষণীয় কালার কম্বিনেশন।</p></div></div>
-   <div class="product"><div class="pic">🌷</div><div class="body"><h3>এমব্রয়ডারি থ্রি-পিস</h3><p>রুচিশীল ডিজাইনের সুন্দর কালেকশন।</p></div></div>
-   <div class="product"><div class="pic">✨</div><div class="body"><h3>নতুন কালেকশন</h3><p>নতুন ডিজাইন ও ট্রেন্ডি কালেকশনের জন্য আমাদের সাথে থাকুন।</p></div></div>
-  </div>
- </div>
-</section>
-
-<section id="contact" class="section">
- <div class="container">
-  <div class="cta">
-   <h2>আপনার পছন্দের কালেকশন দেখতে যোগাযোগ করুন</h2>
-   <p>আপনার পছন্দের কালেকশন সম্পর্কে জানতে বা অর্ডার করতে সরাসরি আমাদের সাথে যোগাযোগ করুন।</p>
-   <p style="margin:14px 0 4px"><strong>📞 ফোন:</strong> <a href="tel:01355243242">০১৩৫৫-২৪৩২৪২</a></p>
-   <p style="margin:4px 0"><strong>💬 WhatsApp:</strong> <a href="https://wa.me/8801355243242" target="_blank" rel="noopener">০১৩৫৫-২৪৩২৪২</a></p>
-   <p style="margin:4px 0 18px"><strong>📍 ঠিকানা:</strong> ১/৩০, ইস্টার্ন মল্লিকা (২য় তলা), এলিফ্যান্ট রোড, ঢাকা-১২০৫</p>
-   <a class="btn" href="https://www.facebook.com/profile.php?id=61594595685010" target="_blank" rel="noopener">ফেসবুক পেজ</a>
-   <a class="btn" href="https://wa.me/8801355243242" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ</a>
-  </div>
- </div>
-</section>
+<section id="contact" class="sec"><div class="wrap contact">
+<h2>আপনার পছন্দের কালেকশন অর্ডার করুন</h2>
+<a href="tel:01355243242">📞 ফোন</a>
+<a href="https://wa.me/8801355243242" target="_blank">💬 WhatsApp</a>
+<a href="https://www.facebook.com/profile.php?id=61594595685010" target="_blank">ফেসবুক পেজ</a>
+</div></section>
 </main>
 
-<footer>
- <div class="container">
-  <h3>এ প্লাস ম্যাচিং সেন্টার</h3>
-  <p>আপনার স্টাইল, আমাদের প্রতিশ্রুতি। 🌸</p>
-  <p class="small">© ২০২৬ এ প্লাস ম্যাচিং সেন্টার — সর্বস্বত্ব সংরক্ষিত</p>
- </div>
-</footer>
+<footer>এ প্লাস ম্যাচিং সেন্টার<br>আপনার স্টাইল, আমাদের প্রতিশ্রুতি। 🌸</footer>
+
+<div id="overlay" class="overlay" onclick="if(event.target===this)closeCart()"><div class="drawer">
+<div class="head"><h2>🛒 আপনার কার্ট</h2><button onclick="closeCart()">✕</button></div>
+<div id="cart"></div><div id="checkout"></div>
+</div></div>
+
+<script>
+const products=[
+{id:1,name:"পাকিস্তানি থ্রি-পিস",price:2450,code:"P-101",image:"products/dress-1.jpg"},
+{id:2,name:"এমব্রয়ডারি থ্রি-পিস",price:1850,code:"P-102",image:"products/dress-2.jpg"},
+{id:3,name:"নতুন কালেকশন থ্রি-পিস",price:2150,code:"P-103",image:"products/dress-3.jpg"}
+];
+// ডেলিভারি চার্জ: প্রয়োজন হলে এই সংখ্যা দুটি পরিবর্তন করুন।
+const delivery={inside:80,outside:150};
+let cart=JSON.parse(localStorage.getItem("aPlusCart")||"[]");
+const money=n=>"৳"+Number(n).toLocaleString("bn-BD");
+
+function renderProducts(){
+document.getElementById("products").innerHTML=products.map(p=>`
+<article class="product">
+<img class="photo" src="${p.image}" onerror="this.src='logo.png'" alt="${p.name}">
+<div class="body"><h3>${p.name}</h3><div class="price">${money(p.price)}</div>
+<div>পণ্য কোড: ${p.code}</div><span class="sample">নমুনা পণ্য</span>
+<button class="add" onclick="add(${p.id})">🛒 কার্টে যোগ করুন</button></div>
+</article>`).join("");count();
+}
+function count(){document.getElementById("count").textContent=cart.reduce((a,x)=>a+x.qty,0)}
+function save(){localStorage.setItem("aPlusCart",JSON.stringify(cart));count();renderCart()}
+function add(id){let x=cart.find(x=>x.id===id);x?x.qty++:cart.push({id,qty:1});save();openCart()}
+function change(id,d){let x=cart.find(x=>x.id===id);if(!x)return;x.qty+=d;if(x.qty<1)cart=cart.filter(x=>x.id!==id);save()}
+function removeItem(id){cart=cart.filter(x=>x.id!==id);save()}
+function openCart(){document.getElementById("overlay").classList.add("open");renderCart()}
+function closeCart(){document.getElementById("overlay").classList.remove("open")}
+
+function renderCart(){
+let ce=document.getElementById("cart"),co=document.getElementById("checkout");
+if(!cart.length){ce.innerHTML="<p style='text-align:center;padding:20px'>আপনার কার্ট খালি। 🌸</p>";co.innerHTML="";return}
+let sub=0;
+ce.innerHTML=cart.map(x=>{let p=products.find(p=>p.id===x.id),t=p.price*x.qty;sub+=t;return`
+<div class="item"><img src="${p.image}" onerror="this.src='logo.png'"><div><b>${p.name}</b><br>${money(p.price)} × ${x.qty}<div class="qty"><button onclick="change(${p.id},-1)">−</button> ${x.qty} <button onclick="change(${p.id},1)">+</button></div></div><button onclick="removeItem(${p.id})">মুছুন</button></div>`}).join("");
+co.innerHTML=`
+<div class="summary"><div class="row"><span>পণ্যের মোট</span><b>${money(sub)}</b></div>
+<label>ডেলিভারি এলাকা</label><select id="area" onchange="updateTotal()"><option value="inside">ঢাকার ভিতরে — ${money(delivery.inside)}</option><option value="outside">ঢাকার বাইরে — ${money(delivery.outside)}</option></select>
+<div class="row"><span>ডেলিভারি চার্জ</span><b id="fee">${money(delivery.inside)}</b></div>
+<div class="row grand"><span>সর্বমোট</span><b id="grand">${money(sub+delivery.inside)}</b></div></div>
+<h3 style="color:var(--m)">📦 অর্ডারের তথ্য</h3>
+<label>আপনার নাম</label><input id="name" placeholder="নাম লিখুন">
+<label>মোবাইল নম্বর</label><input id="phone" placeholder="মোবাইল নম্বর লিখুন">
+<label>সম্পূর্ণ ডেলিভারি ঠিকানা</label><textarea id="address" placeholder="বাড়ি, রোড, এলাকা, থানা, জেলা"></textarea>
+<button class="order" onclick="sendOrder()">💬 WhatsApp-এ অর্ডার করুন</button>`;
+}
+function updateTotal(){let fee=delivery[document.getElementById("area").value],sub=cart.reduce((a,x)=>a+products.find(p=>p.id===x.id).price*x.qty,0);document.getElementById("fee").textContent=money(fee);document.getElementById("grand").textContent=money(sub+fee)}
+function sendOrder(){
+if(!name.value||!phone.value||!address.value){alert("অনুগ্রহ করে নাম, মোবাইল নম্বর ও ঠিকানা পূরণ করুন।");return}
+let fee=delivery[area.value],sub=0,items=[];
+cart.forEach(x=>{let p=products.find(p=>p.id===x.id),t=p.price*x.qty;sub+=t;items.push("• "+p.name+" ("+p.code+") × "+x.qty+" = "+money(t))});
+let msg=["🛍️ নতুন অর্ডার — এ প্লাস ম্যাচিং সেন্টার","","👤 নাম: "+name.value,"📞 ফোন: "+phone.value,"📍 ঠিকানা: "+address.value,"","👗 পণ্য:",...items,"","💰 পণ্যের মোট: "+money(sub),"🚚 ডেলিভারি চার্জ: "+money(fee)+" ("+(area.value==="inside"?"ঢাকার ভিতরে":"ঢাকার বাইরে")+")","💵 সর্বমোট: "+money(sub+fee)].join("
+");
+window.open("https://wa.me/8801355243242?text="+encodeURIComponent(msg),"_blank");
+}
+renderProducts();
+</script>
 </body>
 </html>
